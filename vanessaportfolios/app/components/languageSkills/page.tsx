@@ -46,8 +46,8 @@ export default function LanguageSkills() {
                     <div className="flex justify-center">
                         <div className="justify-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
                             {skills.map((skill) => (
-                                <div className="w-full max-w-[500px] rounded overflow-hidden shadow-lg bg-white" key={skill.language_id}>
-                                    <div className='bg-white text-center py-2 mb-2 w-full h-18 flex items-center justify-center'>
+                                <div className="w-full max-w-[500px] rounded overflow-hidden shadow-lg " key={skill.language_id}>
+                                    <div className='bg-[#3b1a5a] text-center py-2  w-full h-18 flex items-center justify-center'>
                                     <Image
                                             src={`/images/languages/${transformSkillName(skill.language)}.png`}
                                             alt={`${skill.language} icon`}
@@ -56,9 +56,9 @@ export default function LanguageSkills() {
                                             layout='intrinsic'
                                         />
                                     </div>
-                                    <div className='bg-[#e6cee6] px-6 w-full h-16 flex flex-col items-center justify-center'>
-                                        <h2 className='text-l font-bold'>{skill.language}</h2>
-                                        <p className='text-sm'>{skill.level}</p>
+                                    <div className='bg-[#3b1a5a] px-6 w-full h-16 flex flex-col items-center justify-center'>
+                                        <h2 className='text-l text-white font-bold'>{skill.language}</h2>
+                                        <p className='text-sm text-white'>{skill.level}</p>
                                     </div>
                                 </div>
                             ))}

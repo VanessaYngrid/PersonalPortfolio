@@ -50,8 +50,8 @@ export default function TechSkills() {
                     <div className="flex justify-center">
                         <div className="justify-center grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6">
                             {skills.map((skill) => (
-                                <div className="w-full max-w-[120px] rounded overflow-hidden shadow-lg bg-white" key={skill}>
-                                    <div className='bg-white text-center py-2 mb-2 w-full h-16 flex items-center justify-center'>
+                                <div className="bg-[#3b1a5a] w-full max-w-[120px] rounded overflow-hidden shadow-lg" key={skill}>
+                                    <div className='text-center py-2 mb-2 w-full h-16 flex items-center justify-center'>
                                         <Image
                                             src={`/images/${category}/${transformSkillName(skill)}.png`}
                                             alt={`${skill} logo`}
@@ -60,8 +60,8 @@ export default function TechSkills() {
                                             layout='intrinsic'
                                         />
                                     </div>
-                                    <div className='bg-[#e6cee6] px-4 w-full h-10 flex items-center justify-center'>
-                                        <h2 className='text-sm font-bold'>{skill}</h2>
+                                    <div className='px-4 w-full h-10 flex items-center justify-center'>
+                                        <h2 className='text-white text-sm font-bold'>{skill}</h2>
                                     </div>
                                 </div>
                             ))}

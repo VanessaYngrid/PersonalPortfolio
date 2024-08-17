@@ -49,8 +49,8 @@ export default function AgileSkills() {
                     <div className="flex justify-center">
                         <div className="justify-center grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8">
                             {skills.map((skill) => (
-                                <div className="w-full max-w-[120px] rounded overflow-hidden shadow-lg bg-white" key={skill}>
-                                    <div className='bg-white text-center py-2 mb-2 w-full h-16 flex items-center justify-center'>
+                                <div className="w-full max-w-[120px] rounded overflow-hidden shadow-lg bg-[#3b1a5a]" key={skill}>
+                                    <div className=' text-center py-2 mb-2 w-full h-16 flex items-center justify-center'>
                                         <Image
                                             src={`/images/${category}/${transformSkillName(skill)}.png`}
                                             alt={`${skill} logo`}
@@ -59,8 +59,8 @@ export default function AgileSkills() {
                                             layout='intrinsic'
                                         />
                                     </div>
-                                    <div className='bg-[#e6cee6] px-4 w-full h-14 flex items-center justify-center text-center'>
-                                        <h2 className='text-sm font-bold'>{skill}</h2>
+                                    <div className='px-4 w-full h-14 flex items-center justify-center text-center'>
+                                        <h2 className='text-sm  text-white font-bold'>{skill}</h2>
                                     </div>
                                 </div>
                             ))}
@@ -74,19 +74,19 @@ export default function AgileSkills() {
                     <div className="flex justify-center">
                         <div className="justify-center grid grid-cols-1 sm:grid-cols-2 gap-8">
                             {certifications.map((certification) => (
-                                <div className="w-full max-w-[600px] rounded overflow-hidden shadow-lg bg-white" key={certification}>
-                                    <div className='bg-white text-center py-2 mb-2 w-full h-48 flex items-center justify-center cursor-pointer'
+                                <div className="w-full max-w-[600px] rounded overflow-hidden shadow-lg bg-[#3b1a5a]" key={certification}>
+                                    <div className='text-center pt-4 pb-2 w-full h-48 flex items-center justify-center cursor-pointer'
                                     onClick={() => openPDF(certification)}>
                                         <Image
                                             src={`/images/certification/${transformSkillName(certification)}.png`}
                                             alt={`${certification} logo`}
-                                            width={250}
-                                            height={250}
+                                            width={200}
+                                            height={200}
                                             layout='intrinsic'
                                         />
                                     </div>
-                                    <div className='bg-[#e6cee6] px-4 py-4 w-full flex flex-col justify-center text-center'>
-                                        <h2 className='text-md font-bold'>{certification}</h2>
+                                    <div className='px-4 py-4 w-full flex flex-col justify-center text-center'>
+                                        <h2 className='text-white text-md font-bold'>{certification}</h2>
                                     </div>
                                 </div>
                             ))}

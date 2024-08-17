@@ -43,9 +43,9 @@ export default function SoftSkills() {
                     <div className="flex justify-center">
                         <div className="justify-center grid grid-cols-2 sm:grid-cols-3md:grid-cols-4 lg:grid-cols-6 gap-4">
                             {skills.map((skill) => (
-                                <div className="w-full max-w-[160px] rounded overflow-hidden shadow-lg bg-white" key={skill}>
-                                    <div className='bg-[#e6cee6] px-4 py-2 w-full h-14 flex items-center justify-center'>
-                                        <h2 className='text-sm font-bold'>{skill}</h2>
+                                <div className="bg-[#3b1a5a] w-full max-w-[160px] rounded overflow-hidden shadow-lg" key={skill}>
+                                    <div className='px-4 py-2 w-full h-14 flex items-center justify-center'>
+                                        <h2 className='text-white text-sm font-bold'>{skill}</h2>
                                     </div>
                                 </div>
                             ))}
